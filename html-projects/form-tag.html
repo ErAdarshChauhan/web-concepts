@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document- Form tag</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+        <legend style="color: red;"><i><strong>Enter personal Details</strong></i></legend>
+        <label for="male">Male</label> <input type="radio" name="gender" id="male">
+        <label for="female">Female</label> <input type="radio" name="gender" id="female">
+        <br />
+        <label for="cars">Cars</label>
+        <select name="cars" id="cars">
+            <optgroup label="Renault">
+                <option value="">kwid</option>
+                <option value="">Duster</option>
+                <option value="">Captur</option>
+            </optgroup>
+            <optgroup label="Toyota">
+                <option value="">Etios</option>
+                <option value="">Fortuner</option>
+                <option value="">Swift</option>
+            </optgroup>
+        </select>
+        <br />
+        <input list="cars1">
+        <datalist id="cars1">
+            <option value="kwid">
+            <option value="Duster">
+            <option value="Captur">
+        </datalist>
+        <label>select color</label><input type="color" name="" id=""><br>
+        
+        
+        <br>
+        <input type="submit" value="save">
+    </fieldset>
+    </form>
+</body>
+
+</html>

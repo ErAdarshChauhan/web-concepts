@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: slategrey;
+    color: white;
+    margin-top: -21px;
+    padding-top: 0px;
+}
+
+#wrapper{
+    border: 0px solid black;
+    width: 80%;
+    background-color:lightblue;
+    color: black;
+    margin: 0 auto;
+}
+
+#header{
+ background-color: crimson; 
+ height: 100px;  
+ color: white;
+}
+
+#header h1{
+    padding: 30px 0px 0px 20px;
+}
+
+#menu{
+    background-color: rgba(0, 0, 0, 0.504);
+    
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a{
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;   
+}
+
+#menu li a:hover{
+    background-color: crimson;
+    color: white;
+}
+
+#menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+ width: 80%;
+ float: left;
+ min-height: 605px;
+ max-height: 605px;
+ padding: 0px 5px 0px 5px;
+ box-sizing: border-box;
+}
+
+#sidebar{
+    background-color: lightseagreen;  
+    width: 20%; 
+    float: right;
+    min-height: 605px;
+    max-height: 605px;
+}
+
+#sidebar li {
+    padding: 3px;
+}
+
+
+#sidebar li a{
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar li a:hover{
+    color: crimson;
+}
+
+#footer{
+    background-color: rgba(0, 0, 0, 0.504);
+    color: white;
+    height: 20px;  
+    text-align: right;
+    clear: both;
+}
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: pink;
+    }
+}
+@media screen and (max-width:900px){
+    body{
+        background-color: white;
+    }
+}
+@media screen and (max-width:700px){
+    body{
+        background-color: black;
+        color: white;
+        font-family: sans-serif;
+        font-size: x-small;
+    }
+    #wrapper{
+        width: auto;  
+        margin: 0;
+        padding: 0;    
+    }
+    #content{
+        width: auto;
+        float: none;
+        min-height: 40%;
+    }
+    #sidebar{
+        width: auto;
+        float: none;
+        min-height: 10%;
+    }
+} 

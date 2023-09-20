@@ -1,0 +1,188 @@
+#set-position-relative{
+    width: 200px;
+    min-height: 100px;
+    background-color: pink;
+    /* position property work with either left or right and either top or bottom*/
+    position: relative; 
+    left: 200px;
+    top: 150px;
+}
+
+#set-position-absolute{
+    width: 200px;
+    min-height: 100px;
+    background-color: pink;
+    /* position property work with either left or right and either top or bottom*/
+    position: absolute; 
+    top: 10px;
+    left: 100px;
+}
+
+#set-position-fixed{
+    width: 200px;
+    min-height: 100px;
+    background-color: pink;
+    /* position property work with either left or right and either top or bottom*/
+    position: fixed; 
+    top: 100px;
+    left: 500px;
+}
+
+#set-position-sticky{
+    width: 200px;
+    min-height: 100px;
+    background-color: green;
+    /* position property work with either left or right and either top or bottom*/
+    position: sticky; 
+    top: 50px;
+    left: 50px;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 0px solid black;
+  font-size: 25px;
+}
+
+#box1{
+    background-color: darkseagreen;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+}
+
+#box2{
+    background-color:peachpuff;
+    top: 150px;
+    left: 100px;
+    z-index: 2;
+}
+
+#box3{
+    background-color: lightskyblue;
+    top: 200px;
+    left: 150px;
+    z-index: 3;
+}
+
+#box4{
+    background-color: lightgray;
+    top: 250px;
+    left: 200px;
+    z-index: 3;
+}
+
+/* border properties */
+
+table,th,td{
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ddd;
+}
+
+table{
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+td,th{
+    vertical-align: top;
+    padding: 5px 10px;
+}
+tr:hover{
+    background-color: #f2f2f2;
+    color: blue;
+}
+tr:nth-child(even){
+    background-color: black;
+    color: white;
+}
+tr:nth-child(odd){
+    background-color: lightgreen;
+    color: black;
+}
+caption{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    color: darkblue;
+    caption-side: top;
+}
+
+/* resize div vertically, horizontaly, both and none */
+#resize-box{
+    width: 40%;
+    min-height: 20%; 
+    background-color: pink;
+    color: black;
+    font-family: sans-serif;
+    font-size: xx-small;
+    font-style: italic;
+    text-align:justify;    
+    /* now use resize property with helper property overflow */
+    /* it will work like as a textarea tag */
+    overflow: auto;
+    /* resize: vertical; */
+    /* resize: horizontal; */
+    resize: both;
+    /* resize: none; */
+}
+
+#cursor{
+    width: 40%;
+    min-height: 20%; 
+    background-color: pink;
+    color: black;
+    font-family: sans-serif;
+    font-size: xx-small;
+    font-style: italic;
+    text-align:justify;    
+    /* cursor: help; */
+    /* cursor: pointer; */
+    /* cursor: cell; */
+    /* cursor: col-resize; */
+    cursor: zoom-in;
+    cursor: zoom-out;
+}
+
+#parent-box1{
+    border: 0px solid black;
+    width: 600px;
+    height: 600px;
+    font-size: 5px;
+}
+html{
+    font-size: 20px;
+}
+#measurment{
+    width: 100%;
+    min-height: 45%; 
+    background-color: pink;
+    color: black;
+    font-family: sans-serif;
+    /* font-size: 2em; */ /* it takes size of text from parent div, 1em = 16px */
+    font-size: 1rem; /* it is taking font size from either equal to browser font or root of html tag but not from its parent div */
+    font-style: italic;
+    text-align:justify;      
+}
+body{
+    margin: 0;
+    
+}
+#measurment-2{
+    /* width: 100vw; */
+    /*height: 100vh; */ /* vw and vh will work according with browser where as px,% works with parent div */
+    width: 80vmax; /* vmax will take maximum size of either width or height while resizing the browser window */
+    height: 50vh;
+    background-color: pink;
+    color: black;
+    font-family: sans-serif;
+    /* font-size: 2em; */ /* it takes size of text from parent div, 1em = 16px */
+    font-size: 1rem; /* it is taking font size from either equal to browser font or root of html tag but not from its parent div */
+    font-style: italic;
+    text-align:justify;      
+}
+

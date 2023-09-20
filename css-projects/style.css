@@ -1,0 +1,344 @@
+h1{
+    background-color:black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px;
+    text-align: center;
+    margin: -8px -8px 5px -8px;
+}
+
+/* ul#menu li{
+    color: tomato;
+    text-decoration: underline;
+} */
+
+div#menu{
+    color: blue;
+    text-decoration: wavy;
+    border: 3px solid olive;
+    outline: 3px solid red;
+    outline-offset: 1px;
+    padding: 10px 50px 20px 25px;
+    background-color: white;
+}
+
+div#content p
+{
+    color: blueviolet;
+    text-decoration: wavy;
+    text-align: justify;
+    border: 1px solid black;
+    padding: 1px 10px 2px 10px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    min-width: 20%;
+}
+
+#div-width{
+    color: aliceblue;
+    text-decoration: wavy;
+    text-align: justify;
+    border: 1px solid black;
+    padding: 1px 10px 2px 10px;
+    background-color: brown;
+    margin: 20px auto;
+    max-width: 70%;
+    min-width: 20%;
+}
+
+#min-height-id{
+
+    color: black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: small;
+    text-align: justify;
+    border: 1px solid black;
+    min-height: 100px;
+    min-width: 80px;
+    max-width: 900px;
+    padding: 20px 10px;
+}
+
+img{
+    width: 100%;
+}
+
+#border-box{
+    width: 80%;
+    text-decoration: underline rgb(209, 16, 16) wavy;
+    text-align: justify;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: auto;
+}
+
+#circle{
+    width: 200px;
+    margin: auto;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+
+#box-shadow{
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    background-color: pink;
+    /* box-shadow: horizontal-shadow vertilca-shadow blur-shadow(optional) speard-shadow(optional) shadow-color */
+    /* if you want to use spread then must use blur with same value*/
+    /* box-shadow: 6px 6px 0px 0px red; shadow will show on right side */
+    /* box-shadow: -6px 6px 0px 0px red; shadow will show on right side */
+    /* box-shadow: 6px -6px 0px 0px red,12px -12px 3px 0px green,18px -18px 3px 0px blue; multiple shadow will show on top side */
+
+    box-shadow: 6px -6px 0px 0px red inset,12px -12px 3px 0px green inset,18px -18px 3px 0px blue inset;
+}
+
+#float-first{
+    width: 30%;
+    border: 1px solid black;
+    color: green;
+    background-color: black;
+    float: left;
+    
+}
+
+#float-second{
+    width: 30%;
+    color: red;
+    background-color: yellow;
+    border: 1px solid yellow;
+    float: left;
+    margin-left: 4.5%;
+    
+}
+
+#float-third{
+    width: 30%;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    float: right;
+    
+}
+
+#clear-1{
+    width: 40%;
+    border: 1px solid black;
+    background-color: cadetblue;
+    float: left;
+}
+
+#clear-2{
+    width: 40%;
+    border: 1px solid black;
+    background-color: chartreuse;
+    float: right;
+}
+
+#clear-3{
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    clear: both;
+}
+
+#word-break{
+    width: 50%;
+    border: 1px solid black;
+    background-color: chartreuse;
+    word-break: break-all; 
+    /* word-wrap only wraps the word which is started
+     from beginning of the line and end out of div tag and but not 
+     wraps the words which starts at end of the line whereas word-break
+     will do both  */    
+}
+
+
+#text-shadow{
+    background-color: aliceblue;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-shadow: horizontal-shadow vertical-shadow blur-shadow shadow-color; */
+    /* text-shadow: 5px 5px 4px red; */
+    /* text-shadow: -5px -5px 4px red; */
+    text-shadow: 5px 5px 2px red,10px 10px 2px green,15px 15px 2px black;
+}
+
+
+#white-space{
+    width: 300px;
+    border: 1px solid black;
+    white-space: pre-wrap;
+}
+
+
+#text-overflow-with-white-space{
+    width: 300px;
+    border: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    /* text-overflow only works with white-space property */
+}
+
+#column-count{
+    width: 1000px;
+    border: 0px solid black;
+    column-count: 3; /* or use column-width: 150px for this no need to give width*/
+    /* column-width: 100px; */
+    column-gap: 30px;
+    column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: red;
+}
+h2{
+    column-span: all;
+}
+
+
+/* download font-face
+  https://www.fontspace.com/category/faces
+*/
+
+@font-face {
+    font-family: simplesnails;
+    src: url(fonts/SimplesnailsVer40-6Lpx.ttf);
+}
+
+
+#font-face{
+    font-family: simplesnails;
+    width: 1000px;
+    border: 0px solid black;
+    column-count: 3; /* or use column-width: 150px for this no need to give width*/
+    /* column-width: 100px; */
+    column-gap: 30px;
+    column-rule-width: 2px;
+    column-rule-style: dotted;
+    column-rule-color: red;
+}
+
+#google-font{
+    /* https://fonts.google.com/ */
+    font-family: 'Dancing Script', cursive;
+    font-size: large;
+}
+
+/* list-style */
+
+ul{
+    /* https://www.iconfinder.com/icons/3044688/app_check_essential_interface_ui_website_icon  */
+    font-size: larger;
+    list-style-type: square;
+    list-style-image: url(right.png);
+}
+
+ul li{
+    padding: 2px;
+}
+ol{
+    list-style-type: upper-roman;
+}
+
+body{
+    background-color: rgb(44, 161, 118);
+    background-image: url(g-1.png),url(g-2.jpg),url(g-3.jpg);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 200px 300px,500px 300px,200px 50px;
+
+}
+
+#fixed-div{
+    padding: 50px 50px;
+}
+
+body{
+    background-color: rgb(44, 161, 118);
+    background-image: url(g-1.png),url(g-2.jpg),url(g-3.jpg);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: 200px 300px,500px 300px,200px 50px;
+    background-attachment: fixed;
+}
+
+#background-size{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: wheat;
+    background-image: url(g-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#background-origin{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: wheat;
+    background-image: url(g-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+
+    /* background-origin: border-box; */
+    /* background-origin: padding-box; */
+    background-origin: content-box;
+}
+
+
+h1{
+    color: transparent;
+    background-image: url(g-2.jpg);
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-background-clip: text;
+}
+
+#background-clip{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: tomato;
+    background-image: url(g-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+
+    background-clip: padding-box;
+}
+
+#background-colors{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: white;
+    /* background-color: rgb(155, 10, 10); */
+    /* background-color: rgba(155, 10, 10, 0.5); */
+    background-color: hsl(200, 5%, 50%);
+    /* background-color: hsla(155, 5%, 10%, 0.5); */
+    background-image: url(g-3.jpg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+
+    background-clip: padding-box;
+}
+
+#background-gradient{
+    width: 500px;
+    height: 400px;
+    padding: 15px;
+    border: 2px solid black;
+    /* background: linear-gradient(-45deg,blue,red,yellow,green,white,olive,slategrey); */
+    background: repeating-radial-gradient(red 5%,yellow 10%,green 20%);
+    opacity: 0.6;
+}
