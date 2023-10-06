@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip-path</title>
+    <style>
+        /* img{
+            clip-path: circle(34% at 72% 50%);
+            margin-top: 300px;
+            margin-left: 600px;
+        } */
+
+        /* img{
+            clip-path: ellipse(40% 20% at 60% 60%);
+           
+        } */
+
+        /* img{
+            /* will give square or rectangle shape */ /*
+            clip-path: inset(25% 40% 20% 40%); 
+           
+        } */
+
+        img{
+            /* https://bennettfeely.com/clippy/  */
+            /* will give triangle shape */
+            /* clip-path: polygon(50% 0%, 0% 100%,100% 100%); */
+            /* clip-path: polygon(49% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+            /* clip-path: polygon(39% 35%, 39% 58%, 100% 58%, 100% 80%, 40% 80%, 40% 100%, 0 69%); */
+        }
+
+        #box{
+            
+            width: 80px;
+            height: 70px;
+            background-color: black;
+            clip-path: polygon(39% 35%, 39% 58%, 100% 58%, 100% 80%, 40% 80%, 40% 100%, 0 69%);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <img src="images/1.jpg" alt=""> -->
+    <div id="box">
+
+    </div>
+</body>
+</html>

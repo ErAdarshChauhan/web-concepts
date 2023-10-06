@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px;
+            line-height: 300px;
+            background-color: white;
+            color: #03446A;
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation-name: rect-to-circle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: steps(15);
+            animation-play-state: paused;  /* to pause animation */
+        }
+
+        @keyframes rect-to-circle{
+            /* from{
+                border-radius: 0%;
+            }
+            
+            to{
+                border-radius: 60%;
+                color: white;
+                background-color: #03446A;
+            } */
+
+            0%{
+                border-radius: 0%;
+            }
+            25%{
+                background-color: green;
+                color: white;
+            }
+            50%{
+                background-color: red;
+                color: white;
+            }
+            100%{
+                border-radius: 60%;
+                color: white;
+                background-color: #03446A;
+            }
+        }
+
+        .card:hover{
+            /* animation-play-state: paused;        */
+            animation-play-state: running;  /* to resume animation */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        Yahoo Baba
+    </div>
+</body>
+</html>

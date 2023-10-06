@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -150px;
+            perspective: 500px;
+        }
+
+        .content{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 1s;
+            transform-style: preserve-3d;
+        }
+        .card:hover .content{
+            transform: rotateY(180deg);
+        }
+        .front, 
+        .back{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: #fff;
+            color: tomato;
+            /* font-size: 20px; */
+            /* text-align: center; */
+            /* line-height: 300px; */
+            backface-visibility: hidden;
+        }
+        
+        .front{
+            background-color: grey;
+            background-image: url(adarsh.jpg);
+            background-size: 100% 100%;
+
+        }
+
+        .back{
+            background-color: tomato;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="front"></div>
+            <div class="back">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio recusandae corrupti, reiciendis facilis autem quos, laborum incidunt a possimus illum dolores optio quod voluptatibus sequi dolorem quas explicabo esse officiis facere saepe soluta consequuntur? Repudiandae aliquid iste eius, dolorum odit voluptatibus deleniti expedita nobis tempore ex rerum modi id! Excepturi eaque error fuga accusantium itaque reprehenderit? Ullam recusandae ea facere nostrum ipsa, eius enim nesciunt laudantium quidem placeat expedita non nulla itaque dicta officiis veritatis consequuntur quisquam est nobis? Est totam quo nam corrupti, doloremque aliquid excepturi obcaecati laboriosam minima pariatur provident fugit nostrum praesentium cupiditate. Doloremque maxime eum error sapiente mollitia quae quam, ex quisquam reprehenderit totam nobis expedita repudiandae tempora consequatur quos adipisci sint, incidunt assumenda quas ab itaque atque porro ut eaque? Repellat molestiae maiores impedit et quis saepe alias? Iusto voluptatum sequi delectus corporis, laborum vero placeat maxime beatae ab obcaecati nisi, corrupti hic, deleniti dolor itaque dicta minus illo exercitationem quisquam repudiandae ducimus rem consequuntur? Odit natus ipsam quam eveniet, fugit in reiciendis eligendi esse molestiae et pariatur ad rem voluptatum nulla magnam autem incidunt omnis doloribus a illum vel. Animi, ab. Officiis perspiciatis quod architecto veritatis voluptatibus quasi corrupti. Cupiditate reprehenderit facere nesciunt pariatur?
+            </div>
+        </div>
+    </div>
+</body>
+</html>

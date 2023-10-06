@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --main-color:white;
+            --main-background-color:black;
+        }
+
+        /* li:first-child{
+            color: red;
+        } */
+        /* #list li:first-child{
+            color: red;
+        } */
+        /* li:nth-child(2n){
+            color: red;
+        } */
+        /* li:nth-of-type(2){
+            color: red;
+        } */
+        /* p:nth-last-of-type(1){
+            color: red;
+        } */
+        /* li:only-child{
+            color: red;
+        } */
+        /* p:only-of-type{
+            color: red;
+        } */
+        /* div:empty{
+            border: 2px solid red;
+        } */
+        /* p:not(.test){
+            color: blue;
+        } */
+        span:lang(hi){
+            color: red;
+        }
+        span:lang(en){
+            color: blue;
+        }
+        span:lang(fr){
+            color: pink;
+        }
+        span:lang(de){
+            color: green;
+        }
+        span:lang(ch){
+            color: blueviolet;
+        }
+
+        ul a:link{
+            color: red;
+        }
+        /* ul a:hover{
+            color: green;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 40px;
+        } */
+        /* ul a:visited{
+            color: pink;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        } */
+        /* ul a:active{
+            color: olive;
+            font-size: 40px;
+            font-family: 'Courier New', Courier, monospace;
+        } */
+        p:target{
+            background-color: gray;
+            color: white;
+        }
+
+        input:focus{
+            border: 5px solid rgb(233, 35, 75);
+        }
+        input[type='checkbox']:checked + label{
+            /* box-shadow: 0 0 0 3px red; */
+            color: red;
+        }
+        input[type='radio']:checked + label{
+            /* box-shadow: 0 0 0 3px red; */
+            color: red;
+        }
+
+        input:required{
+            background-color: gray;
+            color: white;
+        }
+        input:in-range{
+            background-color: greenyellow;
+        }
+        input:out-of-range{
+            background-color: red;
+            /* background-color: var(--main-background-color);
+            color: var(--main-color); */
+        }
+        
+        /* li::first-letter{ */
+        #list-two li::first-letter{
+            color: red;
+            background-color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p::selection{
+            background-color: green;
+            color: white;
+            
+        }
+        
+        input::placeholder{
+            color: blue;
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>CSS - Pseudo classes and elements</h1>
+
+    <form action="">
+        First-Name: <input type="text"><br><br>
+        Last-Name: <input type="text"><br><br>
+        Age: <input type="number" min="18" max="50" value="0"><br><br>
+        e-mail: <input type="email" required><br><br>
+        Your Hobbies: <input type="checkbox" name="ch"><label for="">Sports</label>
+                    <input type="checkbox" name="ch"><label for="">Music</label>
+                    <input type="checkbox" name="ch"><label for="">Travel</label>
+                    <input type="checkbox" name="ch" checked><label for="">Books Reading</label>
+                    <br><br>
+        Your Gender: <input type="radio" name="gender"><label for="Male">Male</label>
+                    <input type="radio" name="gender" checked><label for="Female">Female</label> <br><br>
+        Your Country: <select name="" id="">
+                            <option value="">USA</option>
+                            <option value="" selected>India</option>
+                            <option value="">England</option>
+                            <option value="">Russia</option>
+                            <option value="">China</option>
+                    </select>
+                    <br><br>
+            <input type="submit" value="save">
+    </form>
+
+    <div></div>
+    <ul>
+        <li><a href="#html">what is Html?</a></li>
+        <li><a href="#css">what is CSS?</a></li>
+        <li><a href="#js">what is Javascript?</a></li>
+        <li><a href="#java">what is java?</a></li>
+    </ul>
+    <ul>
+        <li><a href="a.html" target="_blank">Home</a></li>
+        <li><a href="b.html" target="_blank">About Us</a></li>
+        <li><a href="c.html" target="_blank">Gallery</a></li>
+        <li><a href="d.html" target="_blank">Contact us</a></li>
+    </ul>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.</li>
+        <li>Modi Lorem ipsum dolor sit amet.</li>
+        <li>Connector Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Gemini Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, accusantium. Itaque quibusdam odio quidem
+        perferendis illum odit consequatur sequi tenetur aliquam, molestiae eum in debitis eius et reprehenderit quia
+        rem, nobis esse dolor repellendus vel dolore expedita! Reprehenderit suscipit laborum porro molestias at, vitae
+        et inventore debitis veritatis ipsum tenetur.</p>
+    <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error tenetur ea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores ut quidem deleniti at laboriosam id
+        commodi aliquid voluptatum dicta facilis, suscipit illo facere delectus perspiciatis eligendi fuga ex esse
+        consectetur minus. Ducimus autem amet velit iste reiciendis corporis neque vitae alias quaerat earum dolores,
+        eum doloribus tempora praesentium possimus quasi quos vel sint exercitationem! Laborum quaerat dolorum quos
+        ipsum facere nostrum repellat sint quam, voluptas incidunt labore et eaque molestiae eum maiores doloribus
+        suscipit debitis temporibus animi expedita facilis veniam accusamus? Voluptatum atque eligendi soluta, ipsa eos
+        tempore iste, ullam error ducimus aliquam, et possimus inventore ea maiores quasi.</p>
+
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.</li>
+        <li>Modi Lorem ipsum dolor sit amet.</li>
+        <li>Connector Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Gemini Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum, fdolor sit amet consectetur adipisicing elit. Repellat, accusantium. Itaque quibusdam odio quidem
+            perferendis illum odit consequatur sequi tenetur aliquam, molestiae eum in debitis eius et reprehenderit
+            quia rem, nobis esse dolor repellendus vel dolore expedita! Reprehenderit suscipit laborum porro molestias
+            at, vitae et inventore debitis veritatis ipsum tenetur.</p>
+        <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error tenetur ea.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita maiores ut quidem deleniti at laboriosam id
+            commodi aliquid voluptatum dicta facilis, suscipit illo facere delectus perspiciatis eligendi fuga ex esse
+            consectetur minus. Ducimus autem amet velit iste reiciendis corporis neque vitae alias quaerat earum
+            dolores, eum doloribus tempora praesentium possimus quasi quos vel sint exercitationem! Laborum quaerat
+            dolorum quos ipsum facere nostrum repellat sint quam, voluptas incidunt labore et eaque molestiae eum
+            maiores doloribus suscipit debitis temporibus animi expedita facilis veniam accusamus? Voluptatum atque
+            eligendi soluta, ipsa eos tempore iste, ullam error ducimus aliquam, et possimus inventore ea maiores quasi.
+        </p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, corrupti!</p>
+    </div>
+    <span lang="hi">भारत में आपका स्वागत है</span><br>
+    <span lang="en">welcome to india</span><br>
+    <span lang="fr">bienvenue en Inde</span><br>
+    <span lang="de">Willkommen in Indien</span><br>
+    <span lang="ch">欢迎来到印度</span>
+    
+    <p id="html">HTML Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel atque consequatur aliquam fugiat molestiae itaque natus doloremque repellat mollitia eum sequi, asperiores tempora delectus animi eaque eveniet quibusdam libero autem, minima cumque! Iusto vitae consequatur soluta obcaecati architecto neque unde, suscipit ea, est, ratione officiis quasi! Qui, repellat facere!</p>
+    <p id="css">CSS Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel atque consequatur aliquam fugiat molestiae itaque natus doloremque repellat mollitia eum sequi, asperiores tempora delectus animi eaque eveniet quibusdam libero autem, minima cumque! Iusto vitae consequatur soluta obcaecati architecto neque unde, suscipit ea, est, ratione officiis quasi! Qui, repellat facere!</p>
+    <p id="js">javascript Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel atque consequatur aliquam fugiat molestiae itaque natus doloremque repellat mollitia eum sequi, asperiores tempora delectus animi eaque eveniet quibusdam libero autem, minima cumque! Iusto vitae consequatur soluta obcaecati architecto neque unde, suscipit ea, est, ratione officiis quasi! Qui, repellat facere!</p>
+    <p id="java">java Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel atque consequatur aliquam fugiat molestiae itaque natus doloremque repellat mollitia eum sequi, asperiores tempora delectus animi eaque eveniet quibusdam libero autem, minima cumque! Iusto vitae consequatur soluta obcaecati architecto neque unde, suscipit ea, est, ratione officiis quasi! Qui, repellat facere!</p>
+
+    <h2>CSS - Pseudo elements</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque maxime, laudantium nesciunt enim vitae dolores aperiam iusto! Enim libero, sapiente ullam blanditiis tempora odit officiis illo delectus ex voluptate doloribus voluptatum doloremque nostrum sunt dolores animi. Voluptas vero est deserunt porro ipsa praesentium voluptate molestiae, molestias minus eveniet suscipit aliquid error atque officiis unde deleniti. Rem nobis soluta, voluptate qui doloribus, iure tempore similique veritatis quaerat ipsum corrupti repellat. In itaque alias perspiciatis maxime asperiores blanditiis, aliquid et illo sapiente, vitae eligendi dolores architecto consequuntur magnam quia officiis dolorem repellat vero earum quaerat libero assumenda consequatur deleniti. Ipsum, eaque! Ullam neque nostrum similique illum architecto blanditiis accusantium alias mollitia numquam exercitationem omnis repudiandae quia fugit ratione aut, libero excepturi. Iusto ullam quo odio omnis facere vero aliquam? Iure expedita molestiae doloribus quod ea ad rem culpa voluptatem ipsam in. Accusantium, cum fuga? Autem dolore voluptatibus ullam accusamus maxime atque totam quibusdam molestias id, mollitia accusantium illum soluta culpa aspernatur dolorum. Incidunt eum itaque repellat! Nobis accusantium iusto repellat hic dolorum, corporis omnis magnam, rem provident cum laborum voluptatibus necessitatibus pariatur ipsam corrupti quisquam impedit minus autem accusamus blanditiis laboriosam. Quod libero delectus consectetur soluta similique amet sed, corrupti vel quaerat earum velit nobis quasi sunt, minus enim praesentium maiores. Ipsa libero fuga doloremque velit. Accusantium quod culpa corrupti, ut pariatur deleniti commodi dolorum hic officiis velit accusamus exercitationem ullam magnam ad asperiores maxime placeat excepturi quia similique sint dignissimos rem reiciendis magni. Excepturi labore blanditiis aliquam odio quam. Alias totam dicta quasi consectetur enim iste numquam maiores saepe, modi hic dolores quibusdam voluptas nesciunt incidunt repellendus consequatur doloremque sunt tenetur ipsam officiis. Porro aut minus explicabo quisquam nostrum illum sint praesentium, exercitationem sit labore quidem voluptatibus iusto dolorum magnam cum, soluta dolores eaque nisi tenetur. Nulla aut nesciunt minima?</p>
+
+    <ul id="list-two">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, incidunt.</li>
+        <li>Modi Lorem ipsum dolor sit amet.</li>
+        <li>Connector Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+        <li>Gemini Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cumque rerum consectetur culpa magnam vitae voluptates voluptate soluta laboriosam, officia fuga, vel totam sint voluptatibus odit libero vero mollitia incidunt delectus nihil, aperiam inventore tempore! Quisquam non ratione doloribus consectetur cumque, veritatis sit quaerat excepturi porro, quod tempora autem recusandae obcaecati repellendus fugit modi id cupiditate dicta praesentium voluptatem provident possimus. Quo suscipit quisquam praesentium dolores veritatis qui minus accusantium laboriosam incidunt atque error veniam illum iste sint fugit natus facere doloremque officiis neque quasi, possimus quam debitis unde voluptate. Voluptate et, pariatur earum in aspernatur facilis labore! Exercitationem, aut! Facilis accusantium fuga beatae atque expedita sapiente optio eos, laboriosam magni culpa autem nam! Rerum sit inventore impedit delectus, totam ab nisi eligendi quod fugiat beatae quam numquam iste odit vel accusamus nostrum eaque quae doloremque ut quidem. Eveniet, nobis vel, laboriosam veritatis asperiores quisquam corrupti adipisci dolore modi corporis nostrum. Voluptate labore accusantium accusamus quos commodi ea assumenda autem, at, molestias cum, consequatur tempore nihil omnis qui quia aut vel error obcaecati. Earum eos aspernatur, maiores unde, esse inventore saepe accusamus aliquid beatae quae asperiores provident eius iure illo sit minima optio architecto. Tempore harum aspernatur consequuntur reiciendis quisquam.</p>
+
+    First-Name: <input type="text" placeholder="Enter your name"><br><br>
+    Last-Name: <input type="text" placeholder="Enter your Last Name"><br><br>
+</body>
+
+</html>

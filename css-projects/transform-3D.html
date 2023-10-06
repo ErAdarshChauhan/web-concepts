@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform-3D</title>
+    <style>
+        .base-box{
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            color: grey;
+            margin: 100px 0 0 100px;
+        }
+        img{
+            width: 350px;
+            height: 250px;
+        }
+
+        #inner-box{
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            margin-top: -267px;
+            margin-left: 100px;
+        }
+
+        .base-box:hover{
+            width: 350px;
+            height: 250px;
+            background-image: url(adarsh.jpg);   
+            background-size: 100% 100%;
+            transition: linear 2s;
+            transform: perspective(1000px) rotateX(90deg) translateZ(30px);  
+            
+        }
+
+        /* #inner-box:hover{
+            width: 350px;
+            height: 250px;
+            background-color: black;
+            color: white;
+            background-image: url(adarsh.jpg);   
+            background-size: 100% 100%;
+            transition: linear 1s;
+            transform: perspective(1000px) rotateX(360deg) translateZ(30px);   
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="base-box">
+        
+    </div>
+    <div id="inner-box">
+        Hover mouse here to see Image
+    </div>
+</body>
+</html>
